@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Choose your movie</title>
+        <meta name="description" content="You can find your movie through gender, name, or publication year.">
+        <link rel="stylesheet" href="css/style.css">
+        <template id="movie-card-template">
+            <div class="movie-card" href="movie-page/index.html?movie=">
+                <img class="movie-poster"/>
+                <p><span class="movie-title"></span> - <span class="movie-year"></span></p>
+                <p class="movie-type"></p>
+            </div>
+        </template>
+    </head>
+    <body class="container">
+        <header class="top">
+            <img class="logo" src="images/logo.png" alt="My logo">
+            <div class="htitle">
+                <h1>Choose your movie</h1>
+            </div>
+        </header>
+
+        <div class="info">
+            <p>Watching free movies online is a convenient and frugal way to see the films you love right from the comfort of your own home.</p>
+            <p>Choose your movie and enjoy the best option.</p>
+        </div>
+        
+        <form name="myForm" class="main-input">
+            <h2>Search for a movie</h2>
+            <input id="fn" type="text" name="yourname" autofocus placeholder="Enter name or title movie here" required="required">
+            
+            <button type="submit" class="search" >Search</button>
+            
+        </form>
+        
+
+        <div class="main-result">
+            <!-- Here we show the results using movie cards template -->
+        </div>
+
+        <footer>
+            <p class="footer-info">&copy; 2022 | WDD-330 | Choose your movie app!</p>
+        </footer>
+        <script src="js/main.js" type="module"></script>
+        <script src="js/data.js"></script>
+    </body>
+</html>
