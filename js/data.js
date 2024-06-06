@@ -1,4 +1,4 @@
-const requestURL = "https://abrenzink.github.io/movies_app/data/movie.json";
+const requestURL = "https://Dasquared.github.io/movies_app/data/movie.json";
 const card = document.querySelector(".main-result");
 
 fetch(requestURL)
