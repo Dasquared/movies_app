@@ -5,7 +5,7 @@ export default class Movie{
         this.type = data.Type;
       //  let cadena = data.Poster;
         if(data.Poster === "N/A" || data.Poster.substr(0,1) === ".."){
-            this.poster = "https://dasquared.github.io/movies_app/images/img-movi.jpg"
+            this.poster = "https://Dasquared.github.io/movies_app/images/img-movi.jpg"
         } else{
             this.poster = data.Poster; 
         }     
